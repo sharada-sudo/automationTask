@@ -11,10 +11,16 @@ class homePage {
 
     }
 
-    static categoriesNumbersAndNames() {
+    static categoriesNumbers() {
         cy.get('ul.sdc-site-header__menu-cell.sdc-site-header__menu-cell--1').children()
             .should(function ($lis) {
                 expect($lis).to.have.length(15)
+            })
+    }
+
+    static categoriesNames() {
+        cy.get('ul.sdc-site-header__menu-cell.sdc-site-header__menu-cell--1').children()
+            .should(function ($lis) {
                 expect($lis.eq(0)).to.contain('Home')
                 expect($lis.eq(1)).to.contain('UK')
                 expect($lis.eq(2)).to.contain('World')
@@ -42,19 +48,20 @@ class homePage {
             .should('have.attr', 'aria-current')
     }
 
-    static climateOnFocus() {
+    static clickOnClimate() {
         cy.get('a.sdc-site-header__menu-item-link').eq(5)
             //.should('not.have.attr','aria-current')
             .click({ force: true })
         cy.url()
             .should('include', '/climate')
-
+    }
+    static focusOnClimate() {
         cy.get('a.sdc-site-header__menu-item-link')
             .eq(5)
             .should('have.attr', 'aria-current')
     }
 
-    static selectedStringAndPageTitleSame() {
+    static selectedStoryFromHomePage() {
         cy.visit('https://news.sky.com/')
         cy.get('a.sdc-site-tile__headline-link')
             .eq(0).then(($firstnews) => {
@@ -63,19 +70,25 @@ class homePage {
                 expect(newsLink).to.match(/.*/)
             })
             .click({ force: true })
+    }
 
+    static stringMatchesToUrl() {
         cy.url()
             .should('match', /.*/)
+    }
 
+    static stringMatchesToTitle() {
         cy.title()
             .should('match', /.*/)
-
-
-
-
     }
 
 
+
+
+
 }
+
+
+
 
 export default homePage;
