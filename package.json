@@ -1,0 +1,22 @@
+{
+  "name": "automationtask",
+  "version": "1.0.0",
+  "description": "Sky Tech Task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharada-sudo/automationTask.git"
+  },
+  "author": "Sharada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sharada-sudo/automationTask/issues"
+  },
+  "homepage": "https://github.com/sharada-sudo/automationTask#readme",
+  "devDependencies": {
+    "cypress": "^7.7.0"
+  }
+}
