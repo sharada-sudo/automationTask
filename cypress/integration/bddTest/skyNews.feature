@@ -29,7 +29,7 @@ Feature: SkyNews Home Page .
 
     
     @focus
-    Scenario: Select a story from the homepage. Verify that a word  of your choice in the title text of the article you have just selected appears once title of the new page loads.
+    Scenario: verify dynamic Url Content
 
         Given Valid Url of SkyNews webpage
         When I Click on any story of my choice
