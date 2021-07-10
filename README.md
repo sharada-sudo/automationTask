@@ -48,14 +48,14 @@ Add support for feature files to your Cypress configuration
 Used Smart tagging
 1. @focus
 
-##Editor Used 
+## Editor Used 
 Visual Studio Code 
 
-##Visual code icons 
+## Visual code icons 
 Install VS code Icons
 File > Preferences > File Icon Theme > VSCode Icons.
 
-###Requirements
+### Requirements
 
 1. Using the BDD (Given/When/Then) format, write 5 test cases that relate to features of the
 SkyNews.com homepage, using a full screen desktop view.
