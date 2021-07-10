@@ -55,7 +55,7 @@ Visual Studio Code
 Install VS code Icons
 File > Preferences > File Icon Theme > VSCode Icons.
 
-#Requirements
+###Requirements
 
 1. Using the BDD (Given/When/Then) format, write 5 test cases that relate to features of the
 SkyNews.com homepage, using a full screen desktop view.
