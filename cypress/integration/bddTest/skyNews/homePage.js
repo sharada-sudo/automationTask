@@ -64,7 +64,7 @@ class homePage {
     static selectedStoryFromHomePage() {
 
         cy.get('span.sdc-site-tile__headline-text')
-            .eq(0)
+            .eq(1)
             .invoke('text')
             .then(($firstnews) => {
                 const newsLink = $firstnews.split(" ")[0]

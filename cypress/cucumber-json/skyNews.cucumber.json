@@ -1,0 +1,207 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "SkyNews Home Page .",
+    "line": 1,
+    "id": "skynews-home-page-.",
+    "tags": [],
+    "uri": "skyNews.feature",
+    "elements": [
+      {
+        "id": "skynews-home-page-.;verify-the-browser-tab’s-title.",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Verify the browser tab’s title.",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "Valid Url of SkyNews webpage",
+            "result": {
+              "status": "passed",
+              "duration": 4817000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see browser title as The Latest News from the UK and Around the World | Sky News",
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "skynews-home-page-.;verify-the-number-of-categories-displayed-and-their-names",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Verify the number of categories displayed and their names",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I successfully browse SkyNews page in chrome",
+            "result": {
+              "status": "passed",
+              "duration": 2905000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see number of categories is equal to 15",
+            "result": {
+              "status": "passed",
+              "duration": 118000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I should also see Category Names",
+            "result": {
+              "status": "passed",
+              "duration": 273000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "skynews-home-page-.;verify-the-default-focus-point-is-on-the-home-category",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Verify the default focus point is on the Home category",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 18
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I successfully browse SkyNews page in chrome",
+            "result": {
+              "status": "passed",
+              "duration": 1730000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I should be able to see home category should be highlighted and its content should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 49000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "skynews-home-page-.;verify-that-if-the-user-then-clicks-on-‘climate’,-this-becomes-the-focus",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Verify that if the user then clicks on ‘Climate’, this becomes the focus",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 24
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 27,
+            "name": "Valid Url of SkyNews webpage",
+            "result": {
+              "status": "passed",
+              "duration": 1626000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I Click on Climate Category",
+            "result": {
+              "status": "passed",
+              "duration": 696000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "I should see Climate category should be highlighted and its content should be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 39000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "skynews-home-page-.;verify-dynamic-url-content",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "verify dynamic Url Content",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 32
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "I successfully browse SkyNews page in chrome",
+            "result": {
+              "status": "passed",
+              "duration": 584000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "I Click on any story of my choice with string selected ,the same string on the browser title",
+            "result": {
+              "status": "passed",
+              "duration": 5778000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
