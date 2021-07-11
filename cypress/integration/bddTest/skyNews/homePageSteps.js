@@ -2,8 +2,10 @@
 
 import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
 import homePage from './homePage'
-import skyNews from './homePage'
 
+
+
+//First case
 
 Given('Valid Url of SkyNews webpage', () => {
     homePage.loadHomePage();
@@ -12,6 +14,8 @@ Given('Valid Url of SkyNews webpage', () => {
 Then('I should see browser title as The Latest News from the UK and Around the World | Sky News', () => {
     homePage.browserTitle();
 })
+
+//Second case
 
 When('I successfully browse SkyNews page in chrome', () => {
     homePage.loadHomePage();
@@ -25,12 +29,16 @@ And('I should also see Category Names', () => {
     homePage.categoriesNames();
 })
 
+//Third case
+
 When('I successfully browse SkyNews page in chrome', () => {
     homePage.loadHomePage();
 })
 Then('I should be able to see home category should be highlighted and its content should be displayed', () => {
     homePage.defaultFocusOnHome();
 })
+
+//Fourth case
 
 Given('Valid Url of SkyNews webpage', () => {
     homePage.loadHomePage();
@@ -42,17 +50,13 @@ Then('I should see Climate category should be highlighted and its content should
     homePage.focusOnClimate();
 })
 
+//Fifth case
 
-Given('Valid Url of SkyNews webpage', () => {
-    homePage.loadHomePage();
+When('I successfully browse SkyNews page in chrome  ', () => {
+    homePage.loadHomePage()
+
 })
-When('I Click on any story of my choice', () => {
+
+Then('I Click on any story of my choice with string selected ,the same string on the browser title', () => {
     homePage.selectedStoryFromHomePage();
-
-})
-Then('I should see the story title on the browser title', () => {
-    homePage.stringMatchesToTitle();
-})
-And('Url should also cointain the path of same story as selected', () => {
-    homePage.stringMatchesToUrl();
 })

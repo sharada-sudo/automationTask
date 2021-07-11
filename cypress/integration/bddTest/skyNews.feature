@@ -1,6 +1,7 @@
 Feature: SkyNews Home Page .
 
     @focus
+
     Scenario: Verify the browser tab’s title.
 
         Given  Valid Url of SkyNews webpage
@@ -27,11 +28,10 @@ Feature: SkyNews Home Page .
         When I Click on Climate Category
         Then I should see Climate category should be highlighted and its content should be displayed
 
-    
+
     @focus
     Scenario: verify dynamic Url Content
 
-        Given Valid Url of SkyNews webpage
-        When I Click on any story of my choice
-        Then I should see the story title on the browser title
-        And Url should also cointain the path of same story as selected
+        When  I successfully browse SkyNews page in chrome
+        Then I Click on any story of my choice with string selected ,the same string on the browser title
+

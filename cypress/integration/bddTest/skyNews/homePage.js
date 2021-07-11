@@ -62,33 +62,23 @@ class homePage {
     }
 
     static selectedStoryFromHomePage() {
-        cy.visit('https://news.sky.com/')
-        cy.get('a.sdc-site-tile__headline-link')
-            .eq(0).then(($firstnews) => {
-                const newsLink = $firstnews.text
+
+        cy.get('span.sdc-site-tile__headline-text')
+            .eq(0)
+            .invoke('text')
+            .then(($firstnews) => {
+                const newsLink = $firstnews.split(" ")[0]
                 cy.log(newsLink)
-                expect(newsLink).to.match(/.*/)
+                cy.get('a.sdc-site-tile__headline-link').eq(0)
+                    .click({ force: true })
+                cy.title().should('include', newsLink)
+
             })
-            .click({ force: true })
     }
-
-    static stringMatchesToUrl() {
-        cy.url()
-            .should('match', /.*/)
-    }
-
-    static stringMatchesToTitle() {
-        cy.title()
-            .should('match', /.*/)
-    }
-
-
-
 
 
 }
 
-
-
-
 export default homePage;
+
+
