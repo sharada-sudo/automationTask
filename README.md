@@ -66,6 +66,11 @@ SkyNews.com homepage, using a full screen desktop view.
 6. Select a story from the homepage. Verify that a word of your choice in the title text of the
 article you have just selected appears once title of the new page loads.
 
+### Test Results
+
+![](https://img.shields.io/badge/passed-informational?style=flat&logo=cypress&logoColor=white&color=2bbc8a)
+[![2021-07-11.png](https://i.postimg.cc/QNyyLvc0/2021-07-11.png)](https://postimg.cc/kDWcK11b)
+
 
 
 
